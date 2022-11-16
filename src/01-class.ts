@@ -2,4 +2,5 @@
 class Person {
     /* Properties */
     name: string
+    lastName: string
 }

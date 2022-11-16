@@ -1,0 +1,3 @@
+/* Class Example */
+class Person {
+}

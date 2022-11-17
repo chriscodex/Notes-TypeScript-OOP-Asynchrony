@@ -12,3 +12,7 @@ class Person {
         this.age = age
     }
 }
+
+class MyDate {
+
+}

@@ -4,4 +4,6 @@ class Person {
     name: string
     lastName: string
     age: string
+
+    /* Constructor */
 }

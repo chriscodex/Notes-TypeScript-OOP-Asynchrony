@@ -8,5 +8,6 @@ class Person {
     /* Constructor */
     constructor(name: string, lastName: string, age: number) {
         this.name = name
+        this.lastName = lastName
     }
 }

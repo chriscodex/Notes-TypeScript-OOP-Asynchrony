@@ -15,4 +15,5 @@ class Person {
 
 class MyDate {
     year: number
+    month: number
 }

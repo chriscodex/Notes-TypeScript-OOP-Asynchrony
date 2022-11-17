@@ -17,4 +17,8 @@ class MyDate {
     year: number
     month: number
     date: number
+
+    constructor(year: number, month: number, date: number) {
+
+    }
 }

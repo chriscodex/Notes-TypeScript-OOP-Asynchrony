@@ -24,3 +24,7 @@ class MyDate {
         this.date = date
     }
 }
+
+/* Object */
+const myDate = new MyDate(2020, 3, 13);
+console.log(myDate)

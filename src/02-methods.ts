@@ -28,3 +28,6 @@ export class MyDate {
 
 const myDate = new MyDate(1998,10,2)
 console.log(myDate.printFormat())
+
+myDate.add(1,'days')
+console.log(myDate.printFormat())

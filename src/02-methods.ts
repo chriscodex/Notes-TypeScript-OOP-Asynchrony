@@ -9,5 +9,9 @@ export class MyDate {
         this.date = date
     }
 
-
+    printFormat() {
+        return `${this.date}/${this.month}/${this.year}`
+    }
 }
+
+

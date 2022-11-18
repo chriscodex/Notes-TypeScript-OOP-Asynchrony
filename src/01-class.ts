@@ -28,3 +28,6 @@ class MyDate {
 /* Object */
 const myDate = new MyDate(2020, 3, 13);
 console.log(myDate)
+
+const myPerson = new Person('Christian', 'Espinoza', 24)
+console.log(myPerson)

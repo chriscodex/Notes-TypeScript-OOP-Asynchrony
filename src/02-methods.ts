@@ -27,5 +27,4 @@ export class MyDate {
 }
 
 const myDate = new MyDate(1998,10,2)
-const formated = myDate.printFormat()
-console.log(formated)
+console.log(myDate.printFormat())

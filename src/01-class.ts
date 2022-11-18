@@ -13,7 +13,7 @@ class Person {
     }
 }
 
-class MyDate {
+export class MyDate {
     year: number
     month: number
     date: number

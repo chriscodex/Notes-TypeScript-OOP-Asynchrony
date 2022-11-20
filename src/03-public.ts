@@ -1,4 +1,5 @@
 export class MyDate {
+    /* By default properties are public */
     date: number
     month: number
     year: number
@@ -8,4 +9,6 @@ export class MyDate {
         this.month = month
         this.year = year
     }
+
+
 }

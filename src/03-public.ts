@@ -1,6 +1,6 @@
 export class MyDate {
     /* By default properties are public */
-    date: number
+    public date: number
     month: number
     year: number
 

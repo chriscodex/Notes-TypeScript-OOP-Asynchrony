@@ -11,7 +11,7 @@ export class MyDate {
     }
 
     /* By default methods are public */
-    add(amount: number, type: 'year' | 'month' | 'date') {
+    public add(amount: number, type: 'year' | 'month' | 'date') {
         if (type === 'year') {
             this.year += amount
         }

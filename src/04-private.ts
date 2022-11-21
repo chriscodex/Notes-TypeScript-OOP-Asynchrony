@@ -38,7 +38,7 @@ export class MyDate {
 
     /* Getter */
     getDate() {
-
+        return this.date
     }
 }
 

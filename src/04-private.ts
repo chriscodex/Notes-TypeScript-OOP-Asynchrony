@@ -9,7 +9,7 @@ export class MyDate {
         this.date = date
     }
 
-    addPadding(value: number) {
+    private addPadding(value: number) {
         if (value < 10) {
             return `0${value}`
         } else {

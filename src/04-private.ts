@@ -16,4 +16,10 @@ export class MyDate {
             return `${value}`
         }
     }
+
+    add(amount: number, type: 'year' | 'month' | 'date') {
+        if (type === 'year') {
+            this.year += amount
+        }
+    }
 }

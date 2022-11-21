@@ -8,4 +8,8 @@ export class MyDate {
         this.month = month
         this.date = date
     }
+
+    addPadding() {
+
+    }
 }

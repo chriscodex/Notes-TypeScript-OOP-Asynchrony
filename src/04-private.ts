@@ -28,4 +28,13 @@ export class MyDate {
             this.date += amount
         }
     }
+
+    printFormat() {
+
+        return `${this.date}/${this.month}/${this.year}`
+    }
 }
+
+const myDate = new MyDate(1998,  10, 2)
+
+console.log(myDate.printFormat())

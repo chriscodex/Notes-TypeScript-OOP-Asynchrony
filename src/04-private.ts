@@ -24,5 +24,8 @@ export class MyDate {
         if (type === 'month') {
             this.month += amount
         }
+        if (type === 'date') {
+            this.date += amount
+        }
     }
 }

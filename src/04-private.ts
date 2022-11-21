@@ -33,7 +33,7 @@ export class MyDate {
         const date = this.addPadding(this.date)
         const month = this.addPadding(this.month)
         const year = this.addPadding(this.year)
-        return `${this.date}/${this.month}/${this.year}`
+        return `${date}/${month}/${year}`
     }
 }
 

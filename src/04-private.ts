@@ -9,7 +9,7 @@ export class MyDate {
         this.date = date
     }
 
-    private addPadding(value: number) {
+    private addPadding(value: number): string {
         if (value < 10) {
             return `0${value}`
         } else {
@@ -34,6 +34,11 @@ export class MyDate {
         const month = this.addPadding(this.month)
         const year = this.addPadding(this.year)
         return `${date}/${month}/${year}`
+    }
+
+    /* Getter */
+    getDate() {
+
     }
 }
 

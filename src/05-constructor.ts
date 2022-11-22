@@ -1,6 +1,6 @@
 export class MyDate {
     /* Other way to declare properties of the class using the constructor
-    It needs to delcare the scope explicitly (private or public)
+    It needs to declare the scope explicitly (private or public)
     */
     constructor(
         private year: number = 2000,

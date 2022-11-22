@@ -44,6 +44,11 @@ export class MyDate {
     getMonth() {
         return this.month
     }
+
+    /* Setter */
+    setDate(date: number) {
+        this.date = date
+    }
 }
 
 const myDate = new MyDate(1998,  10, 2)

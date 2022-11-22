@@ -54,3 +54,5 @@ export class MyDate {
 const myDate = new MyDate(1998,  10, 2)
 
 console.log(myDate.printFormat())
+
+console.log(myDate.getDate())

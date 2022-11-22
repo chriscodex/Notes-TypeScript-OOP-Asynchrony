@@ -1,9 +1,9 @@
 export class MyDate {
     /* Other way */
     constructor(
-        private year: number,
-        private month: number,
-        private date: number
+        private year: number = 2000,
+        private month: number = 1,
+        private date: number = 1
     ) {}
 
     private addPadding(value: number): string {

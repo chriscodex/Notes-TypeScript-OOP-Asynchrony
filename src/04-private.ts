@@ -40,6 +40,10 @@ export class MyDate {
     getDate() {
         return this.date
     }
+
+    getMonth() {
+        return this.month
+    }
 }
 
 const myDate = new MyDate(1998,  10, 2)

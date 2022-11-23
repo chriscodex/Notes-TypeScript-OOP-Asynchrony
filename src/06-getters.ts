@@ -1,7 +1,7 @@
 export class MyDate {
     constructor(
         private year: number = 2000,
-        private month: number = 1,
+        private _month: number = 1,
         private _date: number = 1
     ) {}
 
@@ -18,7 +18,7 @@ export class MyDate {
             this.year += amount
         }
         if (type === 'month') {
-            this.month += amount
+            this._month += amount
         }
         if (type === 'date') {
             this._date += amount
@@ -27,7 +27,7 @@ export class MyDate {
 
     printFormat() {
         const date = this.addPadding(this._date)
-        const month = this.addPadding(this.month)
+        const month = this.addPadding(this._month)
         const year = this.addPadding(this.year)
         return `${date}/${month}/${year}`
     }

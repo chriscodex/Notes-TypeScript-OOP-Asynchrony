@@ -2,7 +2,7 @@ export class MyDate {
     constructor(
         private year: number = 2000,
         private month: number = 1,
-        private date: number = 1
+        private _date: number = 1
     ) {}
 
     private addPadding(value: number): string {
@@ -21,20 +21,21 @@ export class MyDate {
             this.month += amount
         }
         if (type === 'date') {
-            this.date += amount
+            this._date += amount
         }
     }
 
     printFormat() {
-        const date = this.addPadding(this.date)
+        const date = this.addPadding(this._date)
         const month = this.addPadding(this.month)
         const year = this.addPadding(this.year)
         return `${date}/${month}/${year}`
     }
 
     /* Getter */
-    getDate() {
-        return this.date
+    get date() {
+        // Code
+        return this._date
     }
 }
 
@@ -42,4 +43,4 @@ const myDate = new MyDate(1998,  10, 2)
 
 console.log(myDate.printFormat())
 
-console.log(myDate.getDate())
+console.log(myDate.date)

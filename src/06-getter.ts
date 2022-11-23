@@ -43,7 +43,7 @@ export class MyDate {
     get isLeapYear() {
         if (this.year % 400 === 0) return true
         if (this.year % 100 === 0) return false
-        return this.year
+        return this.year % 4 === 0
     }
 }
 

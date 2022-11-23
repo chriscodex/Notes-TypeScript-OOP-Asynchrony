@@ -33,9 +33,17 @@ export class MyDate {
     }
 
     /* Getter */
+    // Getter can't be void
     get date() {
         // Code
         return this._date
+    }
+
+    /* Extender una propiedad */
+    get isLeapYear() {
+        if (this.year % 400 === 0) return true
+        if (this.year % 100 === 0) return false
+        return this.year
     }
 }
 

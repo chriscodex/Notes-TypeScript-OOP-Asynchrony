@@ -52,3 +52,5 @@ const myDate = new MyDate(1998,  10, 2)
 console.log(myDate.printFormat())
 
 console.log(myDate.date)
+
+console.log(myDate.isLeapYear)

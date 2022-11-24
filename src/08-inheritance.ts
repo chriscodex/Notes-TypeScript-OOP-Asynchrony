@@ -25,3 +25,7 @@ const rocky = new Animal('rocky')
 
 rocky.move()
 rocky.greeting()
+
+const lazy = new Dog('Lazy')
+
+lazy.woof(3)

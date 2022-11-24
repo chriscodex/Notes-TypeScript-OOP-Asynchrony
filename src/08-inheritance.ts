@@ -14,6 +14,13 @@ export class Animal {
 /* Inheritance from Animal class */
 
 class Dog extends Animal {
+    /* Extend properties */
+    constructor(
+        name: string,
+        public owner: string
+    ) {
+        super(name)
+    }
 
     /* Extend methods */
     woof(times: number) {
@@ -28,6 +35,7 @@ const rocky = new Animal('rocky')
 rocky.move()
 rocky.greeting()
 
-const lazy = new Dog('Lazy')
+const lazy = new Dog('Lazy','Christian')
 
 lazy.woof(3)
+console.log(lazy.owner)

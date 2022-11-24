@@ -14,7 +14,11 @@ export class Animal {
 /* Inheritance from Animal class */
 
 class Dog extends Animal {
-
+    woof(times: number) {
+        for (let index = 0; index < times; index++) {
+            console.log('woof')
+        }
+    }
 }
 
 const rocky = new Animal('rocky')

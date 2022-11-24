@@ -14,6 +14,8 @@ export class Animal {
 /* Inheritance from Animal class */
 
 class Dog extends Animal {
+
+    /* Extend methods */
     woof(times: number) {
         for (let index = 0; index < times; index++) {
             console.log('woof')

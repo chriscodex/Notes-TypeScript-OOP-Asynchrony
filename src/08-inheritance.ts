@@ -11,6 +11,12 @@ export class Animal {
 
 }
 
+/* Inheritance from Animal class */
+
+class Dog extends Animal {
+
+}
+
 const rocky = new Animal('rocky')
 
 rocky.move()

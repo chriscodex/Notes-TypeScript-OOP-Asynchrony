@@ -10,3 +10,7 @@ export class Animal {
     }
 
 }
+
+const rocky = new Animal('rocky')
+
+rocky.move()

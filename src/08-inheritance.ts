@@ -5,4 +5,8 @@ export class Animal {
         console.log('Moving along')
     }
 
+    greeting() {
+        console.log(`Hello, I'm ${this.name}`)
+    }
+
 }

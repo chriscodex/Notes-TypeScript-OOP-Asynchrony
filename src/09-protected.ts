@@ -1,5 +1,6 @@
 export class Animal {
-    constructor(public name: string){}
+    /* the scope of a protected property is in the own class and their doughters classes */
+    constructor(protected name: string){}
 
     move() {
         console.log('Moving along')
@@ -9,12 +10,12 @@ export class Animal {
         console.log(`Hello, I'm ${this.name}`)
     }
 
+    doSomething() {
+        console.log('doo')
+    }
 }
 
-/* Inheritance from Animal class */
-
-export class Dog extends Animal {
-    /* Extend properties */
+class Dog extends Animal {
     constructor(
         name: string,
         public owner: string
@@ -22,11 +23,18 @@ export class Dog extends Animal {
         super(name)
     }
 
-    /* Extend methods */
     woof(times: number) {
         for (let index = 0; index < times; index++) {
             console.log('woof')
         }
+        /* We can use father class methods using the keyword 'super' */
+        super.doSomething()
+    }
+
+    /* Polimorfism */
+    doSomething(): void {
+        console.log('dog is doing something')
+        super.doSomething()
     }
 }
 
@@ -37,5 +45,6 @@ rocky.greeting()
 
 const lazy = new Dog('Lazy','Christian')
 
-lazy.woof(3)
+lazy.woof(1)
 console.log(lazy.owner)
+lazy.doSomething()

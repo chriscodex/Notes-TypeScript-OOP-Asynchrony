@@ -1,8 +1,9 @@
 import axios from 'axios'
+import { Product } from './models/product.model'
 
 (async ()=>{
     async function getProducts() {
-        const promise = await axios.get('https://api.escuelajs.co/api/v1/products')
+        const promise = await axios.get<string[]>('https://api.escuelajs.co/api/v1/products')
         return promise.data
     }
 

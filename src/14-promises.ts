@@ -1,10 +1,10 @@
 (async ()=>{
 
     function delay(time: number) {
-        /* This promise return a boolean */
-        const promise = new Promise<boolean>((resolve)=>{
+        /* This promise return a string */
+        const promise = new Promise<string>((resolve)=>{
             setTimeout(()=>{
-                resolve(true)
+                resolve('Hello friends')
             })
         })
         return promise

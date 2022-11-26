@@ -6,5 +6,6 @@
                 resolve(true)
             })
         })
+        return promise
     }
 })()

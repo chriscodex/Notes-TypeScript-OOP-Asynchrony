@@ -1,8 +1,9 @@
 import { faker } from '@faker-js/faker'
 import { Product} from '../models/product.model'
 import { CreateProductDto, UpdateProductDto } from '../dtos/product.dto'
+import { productService } from '../models/product-service.model'
 
-export class ProductMemoryService {
+export class ProductMemoryService implements productService{
     private products: Product[] = []
 
     create (data: CreateProductDto):Product {
@@ -37,5 +38,9 @@ export class ProductMemoryService {
 
     findOne(id: Product['id']) {
         return this.products.find(item => item.id === id)
+    }
+
+    getAll() {
+        return this.products
     }
 }
